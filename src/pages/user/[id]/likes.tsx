@@ -30,15 +30,15 @@ export default function UserLikes(): JSX.Element {
   return (
     <section>
       <SEO
-        title={`Tweets liked by ${name as string} (@${
+        title={`Claws liked by ${name as string} (@${
           username as string
-        }) / Twitter`}
+        }) / Melo`}
       />
       {loading ? (
         <Loading className='mt-5' />
       ) : !data ? (
         <StatsEmpty
-          title={`@${username as string} hasn't liked any Tweets`}
+          title={`@${username as string} hasn't liked any Claws`}
           description='When they do, those Tweets will show up here.'
         />
       ) : (
