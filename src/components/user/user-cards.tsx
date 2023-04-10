@@ -21,28 +21,28 @@ type UserCardsProps = {
 
 type NoStatsData = Record<CombinedTypes, StatsEmptyProps>;
 
-const allNoStatsData: Readonly<NoStatsData> = {
-  retweets: {
-    title: 'Amplify Claws you like',
-    imageData: { src: '/assets/no-retweets.png', alt: 'No reclaws' },
+const allNoStatsData: NoStatsData = {
+  reclaws: {
+    title: 'Amplify Tweets you like',
+    imageData: { src: '/assets/no-retweets.png', alt: 'No retweets' },
     description:
-      'Share someone else’s Tweet on your timeline by Reclawing it. When you do, it’ll show up here.'
+      'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'
   },
   likes: {
-    title: 'No Claw Likes yet',
+    title: 'No Tweet Likes yet',
     imageData: { src: '/assets/no-likes.png', alt: 'No likes' },
-    description: 'When you like a Claw, it’ll show up here.'
+    description: 'When you like a Tweet, it’ll show up here.'
   },
   following: {
     title: 'Be in the know',
     description:
-      'Following accounts is an easy way to curate your timeline and know what’s the word with the topics and people you’re interested in.'
+      'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.'
   },
   followers: {
     title: 'Looking for followers?',
     imageData: { src: '/assets/no-followers.png', alt: 'No followers' },
     description:
-      'When someone follows this account, they’ll show up here. Clawing and interacting with others helps boost followers.'
+      'When someone follows this account, they’ll show up here. Tweeting and interacting with others helps boost followers.'
   }
 };
 
@@ -80,3 +80,4 @@ export function UserCards({
     </section>
   );
 }
+
