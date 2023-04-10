@@ -54,8 +54,8 @@ export default function UserTweets(): JSX.Element {
         <Loading className='mt-5' />
       ) : !mergedTweets ? (
         <StatsEmpty
-          title={`@${username as string} hasn't tweeted`}
-          description='When they do, their Tweets will show up here.'
+          title={`@${username as string} hasn't clawed`}
+          description='When they do, their Claws will show up here.'
         />
       ) : (
         <AnimatePresence mode='popLayout'>
@@ -82,3 +82,4 @@ UserTweets.getLayout = (page: ReactElement): ReactNode => (
     </MainLayout>
   </ProtectedLayout>
 );
+
