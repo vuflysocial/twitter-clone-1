@@ -26,7 +26,7 @@ export default function Home(): JSX.Element {
 
   return (
     <MainContainer>
-      <SEO title='Home / Twitter' />
+      <SEO title='Home / Melo' />
       <MainHeader
         useMobileSidebar
         title='Home'
@@ -62,3 +62,4 @@ Home.getLayout = (page: ReactElement): ReactNode => (
     </MainLayout>
   </ProtectedLayout>
 );
+
