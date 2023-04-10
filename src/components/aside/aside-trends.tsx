@@ -55,13 +55,13 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
                 <div className='absolute right-2 top-2'>
                   <Button
                     className='hover-animation group relative cursor-not-allowed p-2
-                               hover:bg-accent-blue/10 focus-visible:bg-accent-blue/20 
-                               focus-visible:!ring-accent-blue/80'
+                               hover:bg-accent-green/10 focus-visible:bg-accent-green/20 
+                               focus-visible:!ring-accent-green/80'
                     onClick={preventBubbling()}
                   >
                     <HeroIcon
                       className='h-5 w-5 text-light-secondary group-hover:text-accent-blue 
-                                 group-focus-visible:text-accent-blue dark:text-dark-secondary'
+                                 group-focus-visible:text-accent-green dark:text-dark-secondary'
                       iconName='EllipsisHorizontalIcon'
                     />
                     <ToolTip tip='More' />
@@ -75,7 +75,7 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
                 </p>
                 <p className='font-bold'>{name}</p>
                 <p className='text-sm text-light-secondary dark:text-dark-secondary'>
-                  {formatNumber(tweet_volume)} tweets
+                  {formatNumber(tweet_volume)} claws
                 </p>
               </a>
             </Link>

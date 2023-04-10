@@ -1,23 +1,20 @@
 const footerLinks = [
-  ['About', 'https://about.twitter.com'],
-  ['Help Center', 'https://help.twitter.com'],
-  ['Privacy Policy', 'https://twitter.com/tos'],
-  ['Cookie Policy', 'https://support.twitter.com/articles/20170514'],
-  ['Accessibility', 'https://help.twitter.com/resources/accessibility'],
-  [
-    'Ads Info',
-    'https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html'
-  ],
-  ['Blog', 'https://blog.twitter.com'],
-  ['Status', 'https://status.twitterstat.us'],
-  ['Careers', 'https://careers.twitter.com'],
-  ['Brand Resources', 'https://about.twitter.com/press/brand-assets'],
-  ['Advertising', 'https://ads.twitter.com/?ref=gl-tw-tw-twitter-advertise'],
-  ['Marketing', 'https://marketing.twitter.com'],
-  ['Twitter for Business', 'https://business.twitter.com'],
-  ['Developers', 'https://developer.twitter.com'],
-  ['Directory', 'https://twitter.com/i/directory/profiles'],
-  ['Settings', 'https://twitter.com/settings']
+  ['About', ''],
+  ['Help Center', ''],
+  ['Privacy Policy', ''],
+  ['Cookie Policy', ''],
+  ['Accessibility', ''],
+  ['Ads Info', ''],
+  ['Blog', ''],
+  ['Status', ''],
+  ['Careers', ''],
+  ['Brand Resources', ''],
+  ['Advertising', ''],
+  ['Marketing', ''],
+  ['Melo for Business', ''],
+  ['Developers', ''],
+  ['Directory', ''],
+  ['Settings', '']
 ] as const;
 
 export function LoginFooter(): JSX.Element {
@@ -35,7 +32,7 @@ export function LoginFooter(): JSX.Element {
             {linkName}
           </a>
         ))}
-        <p>© 2022 Twitter, Inc.</p>
+        <p>© 2023 Melo Inu, Inc.</p>
       </nav>
     </footer>
   );

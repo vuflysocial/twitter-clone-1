@@ -122,11 +122,11 @@ export function TweetStats({
         />
         <TweetOption
           className={cn(
-            'hover:text-accent-pink focus-visible:text-accent-pink',
-            tweetIsLiked && 'text-accent-pink [&>i>svg]:fill-accent-pink'
+            'hover:text-accent-green focus-visible:text-accent-green',
+            tweetIsLiked && 'text-accent-green [&>i>svg]:fill-accent-green'
           )}
-          iconClassName='group-hover:bg-accent-pink/10 group-active:bg-accent-pink/20
-                         group-focus-visible:bg-accent-pink/10 group-focus-visible:ring-accent-pink/80'
+          iconClassName='group-hover:bg-accent-green/10 group-active:bg-green-green/20
+                         group-focus-visible:bg-accent-green/10 group-focus-visible:ring-accent-green/80'
           tip={tweetIsLiked ? 'Unlike' : 'Like'}
           move={likeMove}
           stats={currentLikes}

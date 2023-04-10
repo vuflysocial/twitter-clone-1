@@ -10,7 +10,7 @@ const toastOptions: DefaultToastOptions = {
   style: {
     color: 'white',
     borderRadius: '4px',
-    backgroundColor: 'rgb(var(--main-accent))'
+    backgroundColor: 'green'
   },
   success: { duration: 4000 }
 };

@@ -40,9 +40,7 @@ export function UserHomeLayout({ children }: LayoutProps): JSX.Element {
   return (
     <>
       {userData && (
-        <SEO
-          title={`${`${userData.name} (@${userData.username})`} / Twitter`}
-        />
+        <SEO title={`${`${userData.name} (@${userData.username})`} / Melo`} />
       )}
       <motion.section {...variants} exit={undefined}>
         {loading ? (
