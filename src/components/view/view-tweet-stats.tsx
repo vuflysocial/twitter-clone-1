@@ -19,7 +19,7 @@ type viewTweetStats = Pick<Tweet, 'userRetweets' | 'userLikes'> & {
   isStatsVisible: boolean;
 };
 
-export type StatsType = 'retweets' | 'likes';
+export type StatsType = 'reclaws' | 'likes';
 
 type Stats = [string, StatsType | null, number, number];
 
@@ -56,7 +56,7 @@ export function ViewTweetStats({
 
   const allStats: Readonly<Stats[]> = [
     ['Reply', null, replyMove, currentReplies],
-    ['Retweet', 'retweets', tweetMove, currentTweets],
+    ['Reclaw', 'reclaws', tweetMove, currentTweets],
     ['Like', 'likes', likeMove, currentLikes]
   ];
 
@@ -113,3 +113,4 @@ export function ViewTweetStats({
     </>
   );
 }
+
